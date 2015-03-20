@@ -19,6 +19,21 @@
   <defs
      id="defs2987">
     <linearGradient
+       id="linearGradient3925">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="0"
+         id="stop3927" />
+      <stop
+         id="stop3933"
+         offset="0.5"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3929" />
+    </linearGradient>
+    <linearGradient
        id="linearGradient4071">
       <stop
          style="stop-color:#ffffff;stop-opacity:1;"
@@ -149,6 +164,28 @@
        fy="298.5"
        r="22.5"
        gradientUnits="userSpaceOnUse" />
+    <filter
+       inkscape:label="Evanescent"
+       inkscape:menu="Blurs"
+       inkscape:menu-tooltip="Blur the contents of objects, preserving the outline and adding progressive transparency at edges"
+       color-interpolation-filters="sRGB"
+       id="filter3949">
+      <feGaussianBlur
+         result="result6"
+         stdDeviation="3"
+         in="SourceGraphic"
+         id="feGaussianBlur3951" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result7"
+         in="SourceGraphic"
+         id="feColorMatrix3953" />
+      <feComposite
+         operator="in"
+         in="result6"
+         in2="result7"
+         id="feComposite3955" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -157,9 +194,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="182.9949"
-     inkscape:cy="502.10477"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="198.94139"
+     inkscape:cy="585.13073"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
      showgrid="true"
@@ -408,5 +445,28 @@
        width="162.89465"
        id="rect3796"
        style="fill:#022c3d;fill-opacity:1;stroke:#636363;stroke-width:5;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;filter:url(#filter3949)"
+       id="laser"
+       width="15.5"
+       height="118"
+       x="479.89087"
+       y="125.37258"
+       transform="matrix(0.20165363,0,0,0.25847457,282.8817,164.71696)"
+       inkscape:label="#rect3075" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1"
+       id="rect3957"
+       width="13.585787"
+       height="23.027651"
+       x="241.48201"
+       y="214.01576" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1"
+       id="rect3959"
+       width="9.7279224"
+       height="37.244427"
+       x="243.24117"
+       y="203.8544" />
   </g>
 </svg>
